@@ -1,19 +1,25 @@
 from core.agent import run_exercise
 from core.memory import is_done
-from exercises import loops
-from exercises import conditions
+from exercises import loops, conditions, variables, strings, lists, dictionaries, functions, classes, sets_tuples, files_exceptions, env_imports, numpy_basics, pandas_basics, scikit_learn
 
-themes = {
-    "1": {
-        "name": "Boucles",
-        "exercises": loops.exercises
-    },
-    "2": {
-        "name": "Conditions",
-        "exercises": conditions.exercises
-    }
-    # On ajoutera d’autres thèmes ici plus tard (ex: conditions, fonctions...)
+
+themes = themes = themes = {
+    "1": {"name": "Variables",     "exercises": variables.exercises},
+    "2": {"name": "Strings",       "exercises": strings.exercises},
+    "3": {"name": "Conditions",    "exercises": conditions.exercises},
+    "4": {"name": "Boucles",       "exercises": loops.exercises},
+    "5": {"name": "Listes",        "exercises": lists.exercises},
+    "6": {"name": "Dictionnaires", "exercises": dictionaries.exercises},
+    "7": {"name": "Fonctions",     "exercises": functions.exercises},
+    "8": {"name": "Classes",       "exercises": classes.exercises},
+    "9": {"name": "Sets et Tuples", "exercises": sets_tuples.exercises},
+    "10": {"name": "Files et Exceptions", "exercises": files_exceptions.exercises},
+    "11": {"name": "Environnement et Imports", "exercises": env_imports.exercises},
+    "12": {"name": "NumPy", "exercises": numpy_basics.exercises},
+    "13": {"name": "Pandas", "exercises": pandas_basics.exercises},
+    "14": {"name": "Scikit-learn", "exercises": scikit_learn.exercises},
 }
+
 
 def show_menu():
     print("\n=== MENU PRINCIPAL ===")
